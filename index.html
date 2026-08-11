@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA RP - الموقع الرسمي لسيرفر الرول بلاي">
+  <title>NOVA RP | Official</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <img src="assets/nova-logo.jpeg" alt="NOVA RP Logo">
+      <span>NOVA <b>RP</b></span>
+    </a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#players">اللاعبين</a>
+      <a href="#staff">الإدارة</a>
+      <a href="#rules">القوانين</a>
+      <a href="#news">الأخبار</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="musicBtn" class="icon-btn" title="تشغيل الموسيقى">♫</button>
+      <a class="discord-btn" href="#" onclick="alert('ضع رابط Discord الخاص بالسيرفر في script.js'); return false;">دخول Discord</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> OFFICIAL ROLEPLAY COMMUNITY</div>
+        <h1>WELCOME TO <strong>NOVA RP</strong></h1>
+        <p>عالم جديد. قصة جديدة. شخصيتك أنت.</p>
+        <p class="muted">عيش تجربة رول بلاي مختلفة، كوّن شخصيتك، وابنِ قصتك داخل مجتمع NOVA.</p>
+        <div class="hero-buttons">
+          <a href="#players" class="primary-btn">استكشف اللاعبين</a>
+          <a href="#rules" class="secondary-btn">قوانين السيرفر</a>
+        </div>
+        <div class="stats">
+          <div><strong id="onlineCount">247</strong><span>لاعب أونلاين</span></div>
+          <div><strong>8.4K</strong><span>أعضاء المجتمع</span></div>
+          <div><strong>24/7</strong><span>المجتمع مفتوح</span></div>
+        </div>
+      </div>
+      <div class="hero-logo-wrap">
+        <div class="ring"></div>
+        <img class="hero-logo" src="assets/nova-logo.jpeg" alt="NOVA RP">
+      </div>
+    </section>
+
+    <section class="section" id="players">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">COMMUNITY</span>
+          <h2>حسابات اللاعبين</h2>
+        </div>
+        <div class="search-wrap">
+          <input id="playerSearch" type="search" placeholder="ابحث عن لاعب...">
+        </div>
+      </div>
+      <div id="playersGrid" class="cards-grid"></div>
+    </section>
+
+    <section class="section" id="staff">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">TEAM</span>
+          <h2>إدارة NOVA</h2>
+        </div>
+      </div>
+      <div id="staffGrid" class="staff-grid"></div>
+    </section>
+
+    <section class="section split-section" id="rules">
+      <div>
+        <span class="kicker">RULES</span>
+        <h2>قوانين الرول بلاي</h2>
+        <p class="muted">قبل دخولك المدينة، تأكد من قراءة القوانين واحترام باقي اللاعبين.</p>
+      </div>
+      <div class="rules-list">
+        <div><b>01</b><span><strong>احترم الـRP</strong><br>التزم بالشخصية والسيناريو ولا تفسد تجربة الآخرين.</span></div>
+        <div><b>02</b><span><strong>ممنوع الـRDM / VDM</strong><br>لا تهاجم أو تدهس لاعبًا بدون سبب RP منطقي.</span></div>
+        <div><b>03</b><span><strong>ممنوع الغش والاستغلال</strong><br>أي استغلال للثغرات أو البرامج غير المسموحة ممنوع.</span></div>
+        <div><b>04</b><span><strong>احترم الإدارة</strong><br>في حالة وجود مشكلة، استخدم قنوات الدعم الرسمية.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">LATEST</span>
+          <h2>آخر الأخبار</h2>
+        </div>
+      </div>
+      <div class="news-grid">
+        <article class="news-card"><span>UPDATE</span><h3>تحديث جديد قادم</h3><p>تابع Discord لمعرفة تفاصيل التحديثات والفعاليات القادمة.</p><small>منذ يومين</small></article>
+        <article class="news-card"><span>EVENT</span><h3>فعالية المجتمع</h3><p>جهز شخصيتك وكن جزءًا من الأحداث القادمة داخل NOVA RP.</p><small>منذ 5 أيام</small></article>
+        <article class="news-card"><span>NEWS</span><h3>انضمام لاعبين جدد</h3><p>مجتمعنا يكبر يومًا بعد يوم. أهلاً بكل أعضاء NOVA الجدد.</p><small>منذ أسبوع</small></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/nova-logo.jpeg" alt="">
+    <div><strong>NOVA RP</strong><span>Official Roleplay Community</span></div>
+    <p>© 2026 NOVA RP — جميع الحقوق محفوظة</p>
+  </footer>
+
+  <audio id="bgMusic" loop preload="none">
+    <!-- ضع ملف الموسيقى هنا باسم music.mp3 -->
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
